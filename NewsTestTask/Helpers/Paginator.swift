@@ -27,10 +27,10 @@ final class Paginator {
         paginationRequest()
     }
     
-    func handleItemAppearance(totalItems: Int, indexOfItemInTable: Int) {
+    func handleItemAppearance(totalItems: Int, indexOfItemInTable: IndexPath) {
         guard totalItems != 0,
-              indexOfItemInTable > totalItems - 2,
-              indexOfItemInTable > latestDisplayedItemIndex else {
+              indexOfItemInTable.item > totalItems - 2,
+              indexOfItemInTable.item > latestDisplayedItemIndex else {
             return
         }
         latestDisplayedItemIndex = totalItems - 1

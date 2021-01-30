@@ -9,7 +9,7 @@ import Foundation
 
 let API_URL = "https://newsapi.org/v2/top-headlines"
 let API_URL_SOURCE = "https://newsapi.org/v2/sources"
-let API_Key = "2315e66b68fb47cfa8221d6cd8ec1fef"
+let API_Key = "af334fdcfaeb4c3fa750b59317ae9e45"
 
 class NetworkManager {
     
